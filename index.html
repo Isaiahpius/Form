@@ -7,17 +7,36 @@
     <link rel="stylesheet" href="css/output.css">
 </head>
 <body class="my-10">
-    <form class="max-w-2xl w-full mx-auto text-xl border-4 p-5 " action="" method="post">
-        <!-- <fieldset class="">
-        </fieldset> -->
-        <label for="fname">Firstname</label><br>
-        <input class="border-2 border-solid border-gray-600 rounded-md mb-3" type="text"><br>
-        <label for="lname">Last name</label><br>
-        <input class="border-2 border-solid border-gray-600 rounded-md mb-3" type="text"><br>
-        <label class="text-red-500 w-full" for="email">Email</label><br>
-        <input class="border-2 border-solid border-gray-600 rounded-md mb-3" type="email" name="" id="email" pattern="[@][0-9]"><br>
+    <form class="max-w-sm w-full mx-auto text-xl border-4 border-solid border-gray-600 rounded-lg p-5 " id="form" action="" method="">
+        <fieldset class="">
+            <label for="fname">Firstname</label><br>
+            <input class="border-2 border-solid border-gray-600 rounded-md mb-3 w-full" type="text" id="fname" required><br>
+            <p id="firstName"></p>
+        </fieldset>
+        <fieldset>
+            <label for="lname">Last name</label><br>
+            <input class="border-2 border-solid border-gray-600 rounded-md mb-3 w-full" type="text" id="lname" required><br>
+            <p id="lastName"></p>
+        </fieldset>
+        <fieldset>
+            <label class="text-red-500 w-full" for="email">Email</label><br>
+            <input class="border-2 border-solid border-gray-600 rounded-md mb-3 w-full" type="email" id="email" required><br>
+            <p id="emailError"></p>
+        </fieldset>
+        <fieldset>
+            <label for="password">Password</label><br>
+            <input class="border-2 border-solid border-gray-600 rounded-md mb-3 w-full" type="password" id="password" required>
+            <p id="passwordError"></p>
+        </fieldset>
+        <fieldset>
+            <label for="password">Confirm Password</label><br>
+            <input class="border-2 border-solid border-gray-600 rounded-md mb-3 w-full" type="password" id="confirmPassword" required>
+            <p id="confirmPasswordError"></p>
+        </fieldset>
         <!-- <label for="">Submit</label><br> -->
-        <input class="border-2 border-solid border-gray-600 rounded-md px-5" type="submit" value="submit">
+        <input class="border-2 border-solid border-gray-600 rounded-md px-5" type="submit" id="submit" value="submit">
     </form>
+
+    <p id="form"></p>
 </body>
 </html>
